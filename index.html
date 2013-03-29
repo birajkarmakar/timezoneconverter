@@ -1,0 +1,139 @@
+ <!--Copyright (C) 2013 Biraj Karmkar <brnet00@gmail.com>>
+ This program is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 2 of the License, or
+ (at your option) any later version.
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.-->
+  
+       
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+        <meta name="firefox-os-mobile-web-app-capable" content="yes" />
+        <meta name="firefox-os-mobile-web-app-status-bar-style" content="black" />
+        <title>
+        </title>
+        <link rel="stylesheet" href="https://s3.amazonaws.com/codiqa-cdn/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+        <link rel="stylesheet" href="my.css" />
+        <script src="https://s3.amazonaws.com/codiqa-cdn/jquery-1.7.2.min.js">
+        </script>
+        <script src="https://s3.amazonaws.com/codiqa-cdn/mobile/1.2.0/jquery.mobile-1.2.0.min.js">
+        </script>
+        <script src="my.js">
+        </script>
+		
+		<script type="text/javascript" src="js/jquery-1.7.1.js"></script>
+        <script type="text/javascript" src="js/jquery.ui.core.js"></script>
+        <script type="text/javascript" src="js/jquery.ui.widget.js"></script>
+        <script type="text/javascript" src="js/jquery.ui.datepicker.js"></script>
+        <script type="text/javascript" src="js/DateTimePicker.js"></script>
+	
+	    <link type="text/css" href="css/jquery.ui.theme.css" rel="stylesheet" />
+        <link type="text/css" href="css1/jquery.ui.datepicker.css" rel="stylesheet" />
+    
+		<script type="text/javascript">
+	$(function () {
+    		
+    		$("#datetimepicker").datetimepicker({ showOn: "button", buttonImage: "images/images/calendar.gif", buttonImageOnly: true });
+    	});
+
+    </script>
+        <!-- User-generated css -->
+        <style>
+        </style>
+        <!-- User-generated js -->
+        <script>
+            try {
+
+    $(function() {
+
+    });
+
+  } catch (error) {
+    console.error("Your javascript has an error: " + error);
+  }
+        </script>
+    </head>
+    <body>
+        <!-- Home -->
+        <div data-role="page" id="page1">
+            <div data-role="content">
+                <div class="ui-grid-a">
+                 <div class="ui-block-a">
+					<h4>
+						Time Zone Converter
+					</h4>
+				</div>
+				<div class="ui-block-b">
+				<a id="ref" data-role="button" href="#page1">
+                            Refresh 
+                 </a>
+				 <script src="js/ref.js"></script>
+				</div>
+			</div>
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <label for="textinput3">
+                            Enter the time
+                        </label>
+                        <input name="" id="datetimepicker" placeholder="Ex. MM/DD/YYYY hh:mm:ss" value="" type="text" />
+                        Pick a date and time
+                    </fieldset>
+                </div>
+				
+                
+                    
+                        <a id="gmt" data-role="button"  href="#page1" >
+                            IST to GMT/UTC
+                        </a>
+						<script src="js/gmt.js"></script>
+                      <div class="ui-grid-a">
+                     <div class="ui-block-a">
+                       <a id="pst" data-role="button" href="#page1">
+                        IST to PST
+                      </a>
+					  <script src="js/pst.js"></script>
+					</div>
+					<div class="ui-block-b">
+						<a id="pstist"data-role="button" href="#page1">
+						PST to IST
+						</a>
+					<script src="js/pstist.js"></script>
+					</div>
+					</div>
+						
+                   
+                    
+                        <a id="gmtist" data-role="button" href="#page1">
+                          GMT/UTC to IST  
+                        </a>
+						<script src="js/gmtist.js"></script>
+                        
+                   
+					
+                        <a id="gmtpst" data-role="button" href="#page1">
+                            UTC/GMT to PST
+                        </a>
+						<script src="js/gmtpst.js"></script>
+                        <a id="pstgmt" data-role="button" href="#page1">
+						PST to UTC/GMT
+                        </a>
+						<script src="js/pstgmt.js"></script>
+                    
+					
+                        
+						
+                    
+				
+               
+            </div>
+			
+        </div>
+		
+    </body>
+</html>

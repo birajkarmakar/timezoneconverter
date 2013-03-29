@@ -1,0 +1,13 @@
+{
+  "name": "Time Zone Converter",
+  "description": "Converting the time zone one to another ",
+  "launch_path": "/index.html",
+  "icons": {
+    "128": "/images/clock.png"
+  },
+  "developer": {
+    "name": "Biraj Karmakar",
+    "url": "http://birajkarmakar.wordpress.com"
+  },
+  "default_locale": "en"
+}
