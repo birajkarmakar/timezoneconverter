@@ -1,9 +1,9 @@
 {
   "name": "Time Zone Converter",
   "description": "Converting the time zone one to another ",
-  "launch_path": "/index.html",
+  "launch_path": "/timezoneconverter/index.html",
   "icons": {
-    "128": "/images/clock.png"
+    "128": "/timezoneconverter/images/clock.png"
   },
   "developer": {
     "name": "Biraj Karmakar",
